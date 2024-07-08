@@ -1,0 +1,6 @@
+rootProject.name = 'arbeesgrocer'
+include 'common'
+include 'weborder'
+include 'ordertracking'
+include 'orderconfirmation'
+include 'deliveryconfirmation'
