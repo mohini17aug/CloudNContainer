@@ -22,3 +22,102 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+**/node_modules/
+.pnp
+.pnp.js
+
+# testing
+**/coverage/
+
+# production
+**/build/
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env
+.vscode/
+.idea/
+*.local
+*.log
+
+# node-waf configuration
+.lock-wscript
+
+# npm debug log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# parcel-bundler cache (https://medium.com/@gimenete/how-to-add-parcel-bundler-to-a-react-app-3fbdd6cf1d72)
+.cache/
+
+# next.js build output
+.next/
+
+# remix.js build output
+.build/
+
+# Nuxt.js build / generate output
+.nuxt/
+dist/
+
+# vuepress build output
+.vuepress/dist
+
+# Serverless directories
+.serverless/
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
+
+# TernJS port file
+.tern-port
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional eslint cache
+.eslintcache
+
+# Log files
+logs
+*.log
+
+# .eslintcache
+*.eslintcache
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variable files
+.env*
+
+# Storybook files
+storybook-static/
+
+# SvelteKit build output
+.svelte-kit/
+
+# Snowpack build output
+build/
+
+# static files
+static/
+
+# VS Code directory
+.vscode/
