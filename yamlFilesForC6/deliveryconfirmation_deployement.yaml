@@ -1,0 +1,21 @@
+# deliveryconfirmation-service-deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deliveryconfirmation-service-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: deliveryconfirmation-service
+  template:
+    metadata:
+      labels:
+        app: deliveryconfirmation-service
+    spec:
+      containers:
+      - name: deliveryconfirmation-service
+        image: deliveryconfirmation-service:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 80

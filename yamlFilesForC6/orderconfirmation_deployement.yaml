@@ -1,0 +1,21 @@
+# orderconfirmation-service-deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orderconfirmation-service-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: orderconfirmation-service
+  template:
+    metadata:
+      labels:
+        app: orderconfirmation-service
+    spec:
+      containers:
+      - name: orderconfirmation-service
+        image: orderconfirmation-service:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 80

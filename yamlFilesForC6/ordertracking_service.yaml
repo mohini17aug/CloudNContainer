@@ -1,0 +1,13 @@
+# ordertracking-service-service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: ordertracking-service-service
+spec:
+  type: NodePort
+  selector:
+    app: ordertracking-service
+  ports:
+  - port: 8081
+    targetPort: 8081
+    nodePort: 30002

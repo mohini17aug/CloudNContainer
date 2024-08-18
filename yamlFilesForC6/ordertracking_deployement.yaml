@@ -1,0 +1,21 @@
+# ordertracking-service-deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ordertracking-service-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ordertracking-service
+  template:
+    metadata:
+      labels:
+        app: ordertracking-service
+    spec:
+      containers:
+      - name: ordertracking-service
+        image: ordertracking-service:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 80
